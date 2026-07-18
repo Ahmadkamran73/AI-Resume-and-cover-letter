@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sample Outputs - AI Cover Letter Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Sample Output Comparisons</h1>
+            <p>See how different resumes and job descriptions produce tailored cover letters</p>
+        </header>
+
+        <nav>
+            <a href="/">Generator</a>
+            <a href="/samples">Sample Outputs</a>
+        </nav>
+
+        {% for sample in samples %}
+        <div class="card sample-card">
+            <h3>{{ sample.job.title }}</h3>
+            <div class="sample-meta">
+                <strong>Candidate:</strong> {{ sample.resume.name }} &middot;
+                <strong>Skills matched:</strong> {{ sample.skills_matched | join(", ") }}
+            </div>
+            <div class="sample-letter">{{ sample.cover_letter }}</div>
+        </div>
+        {% endfor %}
+
+        <footer>
+            <p>Powered by OpenAI GPT-4o-mini &middot; Prompt Engineering Project</p>
+        </footer>
+    </div>
+</body>
+</html>

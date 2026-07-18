@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Resume Analyzer & Cover Letter Generator</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>AI Cover Letter Generator</h1>
+            <p>Paste your resume and a job description to get a tailored cover letter</p>
+        </header>
+
+        <nav>
+            <a href="/">Generator</a>
+            <a href="/samples">Sample Outputs</a>
+        </nav>
+
+        {% if error %}
+        <div class="error">{{ error }}</div>
+        {% endif %}
+
+        <div class="card">
+            <form method="POST">
+                <div class="form-group">
+                    <label for="resume">Resume (JSON)</label>
+                    <textarea id="resume" name="resume" placeholder='{
+  "name": "Ayesha Khan",
+  "experience": "3 years in data science...",
+  "skills": ["Python", "TensorFlow"],
+  "projects": ["AI-powered chatbot"]
+}'>{{ request.form.get("resume", "") }}</textarea>
+                </div>
+
+                <div class="form-group">
+                    <label for="job_description">Job Description (JSON)</label>
+                    <textarea id="job_description" name="job_description" placeholder='{
+  "title": "NLP Research Associate",
+  "requirements": ["NLP", "ML deployment", "Python"]
+}'>{{ request.form.get("job_description", "") }}</textarea>
+                </div>
+
+                <button type="submit">Generate Cover Letter</button>
+            </form>
+        </div>
+
+        {% if cover_letter %}
+        <div class="card">
+            <label>Generated Cover Letter</label>
+            <div class="output">{{ cover_letter }}</div>
+        </div>
+        {% endif %}
+
+        <footer>
+            <p>Powered by OpenAI GPT-4o-mini &middot; Prompt Engineering Project</p>
+        </footer>
+    </div>
+</body>
+</html>

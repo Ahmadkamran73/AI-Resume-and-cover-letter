@@ -1,0 +1,44 @@
+[
+  {
+    "resume": {
+      "name": "Ayesha Khan",
+      "experience": "3 years in data science, working with NLP and time-series forecasting.",
+      "skills": ["Python", "TensorFlow", "Pandas", "Prompt Engineering"],
+      "projects": ["AI-powered chatbot for finance", "Anomaly detection for manufacturing sensors"]
+    },
+    "job": {
+      "title": "NLP Research Associate",
+      "requirements": ["NLP", "ML deployment", "LLM fine-tuning", "Python"]
+    },
+    "skills_matched": ["NLP", "Python", "Prompt Engineering"],
+    "cover_letter": "Dear Hiring Manager,\n\nI am writing to express my strong interest in the NLP Research Associate position. With three years of hands-on experience in data science — specializing in NLP and time-series forecasting — I am confident that my background aligns closely with your team's needs.\n\nIn my current role, I have developed and deployed an AI-powered chatbot for the finance sector, which required deep expertise in natural language understanding, intent classification, and conversational AI. This project involved end-to-end ML deployment, from data preprocessing through model serving, directly mirroring the deployment skills your role requires.\n\nMy proficiency in Python and TensorFlow has been central to every project I've undertaken, including building anomaly detection systems for manufacturing sensors where I applied advanced modeling techniques at scale. Additionally, my experience with prompt engineering positions me well for LLM fine-tuning workflows, as I understand the nuances of model behavior and output optimization.\n\nI am excited about the opportunity to contribute to cutting-edge NLP research while leveraging my practical deployment experience. I would welcome the chance to discuss how my skills can support your team's goals.\n\nSincerely,\nAyesha Khan"
+  },
+  {
+    "resume": {
+      "name": "David Chen",
+      "experience": "5 years as a backend engineer specializing in distributed systems and API design.",
+      "skills": ["Go", "Python", "Kubernetes", "PostgreSQL", "gRPC"],
+      "projects": ["Real-time event streaming platform", "Multi-region service mesh deployment"]
+    },
+    "job": {
+      "title": "Senior Backend Engineer",
+      "requirements": ["Distributed systems", "Kubernetes", "Go or Python", "API design"]
+    },
+    "skills_matched": ["Distributed systems", "Kubernetes", "Go", "Python", "API design"],
+    "cover_letter": "Dear Hiring Manager,\n\nI am excited to apply for the Senior Backend Engineer role. With five years of experience building and scaling distributed systems, I bring the exact technical depth your team is looking for.\n\nMy most recent project — a real-time event streaming platform — required designing high-throughput APIs capable of handling millions of events per second with strong delivery guarantees. This work sharpened my skills in Go, gRPC, and PostgreSQL while demanding rigorous attention to fault tolerance and horizontal scalability.\n\nI have extensive hands-on experience with Kubernetes, having led a multi-region service mesh deployment that reduced cross-region latency by 40% while maintaining zero-downtime deployments. I understand the operational complexity of container orchestration at scale and have built tooling to simplify developer workflows around it.\n\nMy dual fluency in Go and Python allows me to choose the right tool for each problem — Go for performance-critical services and Python for rapid prototyping and data pipeline work. Combined with my focus on clean API design, I am well-positioned to contribute meaningful, production-grade systems from day one.\n\nI look forward to the opportunity to discuss how my experience aligns with your team's technical challenges.\n\nBest regards,\nDavid Chen"
+  },
+  {
+    "resume": {
+      "name": "Maria Santos",
+      "experience": "2 years in frontend development with a focus on accessibility and design systems.",
+      "skills": ["React", "TypeScript", "CSS", "Figma", "WCAG compliance"],
+      "projects": ["Component library for healthcare platform", "Accessible e-commerce checkout redesign"]
+    },
+    "job": {
+      "title": "Frontend Developer - Design Systems",
+      "requirements": ["React", "TypeScript", "Design systems", "Accessibility"]
+    },
+    "skills_matched": ["React", "TypeScript", "Design systems", "Accessibility"],
+    "cover_letter": "Dear Hiring Manager,\n\nI am thrilled to apply for the Frontend Developer - Design Systems position. My two years of focused experience building accessible, reusable component libraries make me a strong fit for this role.\n\nI recently led the development of a comprehensive component library for a healthcare platform, where accessibility was not optional — it was a regulatory requirement. This experience gave me deep expertise in WCAG compliance, screen reader testing, and keyboard navigation patterns, all implemented with React and TypeScript for type safety and developer ergonomics.\n\nMy work on an accessible e-commerce checkout redesign demonstrated my ability to balance beautiful design with inclusive functionality. I collaborated closely with designers in Figma to translate design tokens into a systematic, maintainable CSS architecture that scaled across dozens of components.\n\nI am passionate about design systems as a discipline — the intersection of engineering rigor, design consistency, and accessibility standards. I would love to bring this passion and practical experience to your team.\n\nWarm regards,\nMaria Santos"
+  }
+]
